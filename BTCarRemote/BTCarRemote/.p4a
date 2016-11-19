@@ -1,0 +1,16 @@
+--dist_name=btcar
+--private .
+--ndk_version=12b
+--ndk_dir=/home/pszczelaszkov/android-ndk-r12b
+--sdk_dir=/home/pszczelaszkov/android-sdk-linux
+--android_api=12
+--minsdk=9
+--package=org.pszczelaszkov.btcar
+--name "BTCarRemote"
+--version 0.1
+--bootstrap=sdl2
+--requirements=python2,kivy,android
+--permission=VIBRATE
+--permission=BLUETOOTH
+--permission=BLUETOOTH_ADMIN
+--permission=ACCESS_COARSE_LOCATION
