@@ -23,6 +23,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="accelerometer.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="bluetoothManager.py">
       <SubType>Code</SubType>
     </Compile>

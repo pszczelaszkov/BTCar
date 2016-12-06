@@ -99,9 +99,12 @@ class BluetoothManager(PythonJavaClass):
         self.bluetooth_adapter.disable()
         self.broadcast_receiver.stop()
         self.connection_dispatcher.enabled = False
+        if(not self.connection_dispatcher.is_alive()):
+            return
+
         if(self.connection_dispatcher.lock.locked):
             self.connection_dispatcher.lock.release()
-
+        
         self.connection_dispatcher.join()
 
     def send(self,message):
